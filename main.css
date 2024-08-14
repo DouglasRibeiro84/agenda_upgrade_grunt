@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+header h1{
+    margin-left: 14px;
+    font-size: 37px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+header img {
+    width: 40px;
+    margin-left: 5px;
+}
+
+.container{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2{
+    background-color: rgba(0, 0, 0, 0.457);
+    padding: 15px;
+    border-radius: 10px;
+    border: 4px double rgb(255, 255, 255) ;
+}    
+
+body{
+    background-image: url(https://thumbs.dreamstime.com/b/conceito-do-neg%C3%B3cio-com-agenda-telefone-celular-e-pena-54430772.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    padding: 9px;
+}
+
+input,
+button{
+    border-radius: 10px;
+    outline: none;
+}
+
+input::-webkit-input-placeholder{
+    color: rgba(128, 128, 128, 0.603);
+}
+
+#nome{
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+}
+
+#telefone{
+    width: 100px;
+    padding: 5px;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(42, 216, 42);
+    cursor: pointer;
+}
+
+button{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: green;
+    padding: 5px;
+    border: none;
+    color: white;
+}
+
+table{
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+}
+
+table th{
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    padding: 4px;
+    font-weight: bold;
+}
+
+table td{
+    text-align: center;
+    padding: 4px;
+}
+
+tfoot td{
+    border-top: 2px solid white;
+}
