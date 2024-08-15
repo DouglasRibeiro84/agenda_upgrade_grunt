@@ -1,0 +1,208 @@
+@fontPrincipal: Roboto, sans-serif;
+@fontTitulo: Lobster, cursive;
+@corPrincipal: white;
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: @fontPrincipal;
+    background-image: url(https://thumbs.dreamstime.com/b/conceito-do-neg%C3%B3cio-com-agenda-telefone-celular-e-pena-54430772.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media @breakpointMobile {
+        width: 90%;
+        height: 100vh;
+    }
+
+    @media @breakpointTablet {
+        width: 90%;
+        height: 100vh;
+    }
+}
+
+.container2 {
+
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.457);
+    padding: 15px;
+    border-radius: 10px;
+    border: 4px double rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @breakpointMobile {
+        width: 100%;
+    }
+
+    @media @breakpointTablet {
+        width: 100%;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-family: @fontTitulo;
+    padding: 8px;
+    justify-content: space-evenly;
+
+    h1 {
+        font-size: 2.6em;
+        color: @corPrincipal;
+        font-weight: 600;
+
+        @media @breakpointMobile {
+            font-size: 1.7em;
+        }
+
+        @media @breakpointTablet {
+            font-size: 1.7em;
+        }
+    }
+
+    img {
+        width: 50px;
+        transition: all ease .4s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+
+form {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media @breakpointMobile {
+        display: block;
+    }
+
+    @media @breakpointTablet {
+        display: block;
+    }
+
+    input {
+
+        @media @breakpointMobile {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        @media @breakpointTablet {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        &::-webkit-input-placeholder {
+            color: rgba(255, 251, 251, 0.603);
+            font-weight: bold;
+        }
+
+        cursor: pointer;
+        max-width: 100%;
+        padding: 8px 12px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        background-color: transparent;
+        color: @corPrincipal;
+        font-weight: bold;
+    }
+
+    #telefone {
+        width: 110px;
+
+        @media @breakpointMobile {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        @media @breakpointTablet {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    button {
+
+        @media @breakpointMobile {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        @media @breakpointTablet {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        font-family: @fontPrincipal;
+        font-weight: bold;
+        font-style: normal;
+        background-color: rgb(51, 128, 0);
+        padding: 8px 12px;
+        border: none;
+        color: @corPrincipal;
+        border-radius: 10px;
+
+        transition: all ease .4s;
+
+        &:hover {
+            transform: scale(1.1);
+            background: rgba(103, 243, 10, 0.795);
+
+            @media @breakpointMobile {
+                transform: none;
+            }
+
+            @media @breakpointTablet {
+                transform: none;
+            }
+        }
+    }
+}
+
+
+table {
+    color: @corPrincipal;
+    margin: 0 auto;
+    width: 100%;
+
+    th {
+        font-size: 18px;
+        border-bottom: 2px solid @corPrincipal;
+        padding: 4px;
+        font-weight: bold;
+    }
+
+    td {
+        text-align: center;
+        padding: 4px;
+    }
+
+    tfoot td {
+        border-top: 2px solid @corPrincipal;
+    }
+}
